@@ -1,7 +1,3 @@
-/* webpack.config.js
- * @ Cong Min
- */
-// const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -50,6 +46,7 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
+                            esModule: false,
                             limit: 8192,
                             name: 'static/[name].[ext]?[hash:6]'
                         }
